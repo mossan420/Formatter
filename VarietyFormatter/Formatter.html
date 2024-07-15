@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family:Verdana,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6",Osaka,"ＭＳ Ｐゴシック",Arial,sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .clWrap{
+            width:800px;
+            margin:0 auto;
+            text-align:center;
+        }
+        h1{
+            font-size:18px;
+            line-height:1.4em;
+            text-align:center;
+            font-weight:normal;
+        }
+        </style>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/base64.js"></script>
+<script type="text/javascript" src="./libs/jszip/jszip.js"></script>
+<script type="text/javascript" src="docx.js"></script>
+<script>
+function fncDoc() {
+	var doc = new DOCXjs();
+	doc.text('JavaScriptの処理内に記述のテキスト情報を');
+	doc.text('Wordファイルのテキスト情報として出力してます。');
+	var output = doc.output('datauri');
+
+}
+</script>
+
+<div class="clWrap">
+    <h1>以下の「ダウンロード」リンククリック後しファイルをダウンロード後、<br />
+    ファイル名を「～.doc」「～.docs」に変更して開いてみて下さい。</h1>
+
+	<a href="javascript:fncDoc()">ダウンロード</a>
+</div><!--/clWrap-->
+
+</body>
+</html>
