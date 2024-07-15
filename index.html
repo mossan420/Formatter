@@ -6,22 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./libs/base64.js"></script>
-    <script type="text/javascript" src="./libs/jszip/jszip.js"></script>
-    <script type="text/javascript" src="docx.js"></script>
-    <script>
-        function fncDoc() {
-            var doc = new DOCXjs();
-            doc.text('JavaScriptの処理内に記述のテキスト情報を');
-            doc.text('Wordファイルのテキスト情報として出力してます。');
-            var output = doc.output('datauri');
-
-        }
-    </script>
-</head>
-
-<body>
     <style>
         body {
             font-family: Verdana, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W6", Osaka, "ＭＳ Ｐゴシック", Arial, sans-serif;
@@ -42,6 +26,24 @@
             font-weight: normal;
         }
     </style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./libs/base64.js"></script>
+    <script type="text/javascript" src="./libs/jszip/jszip.js"></script>
+    <script type="text/javascript" src="docx.js"></script>
+    <script>
+        function fncDoc() {
+            var doc = new DOCXjs();
+            doc.text('JavaScriptの処理内に記述のテキスト情報を');
+            doc.text('Wordファイルのテキスト情報として出力してます。');
+            var output = doc.output('datauri');
+
+        }
+    </script>
+</head>
+
+<body>
+ 
 
 
 
